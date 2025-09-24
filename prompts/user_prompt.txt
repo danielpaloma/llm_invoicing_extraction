@@ -1,0 +1,12 @@
+Extract the following fields from the invoice text below:
+
+- Invoice Number
+- Vendor (issuer)
+- Recipient
+- Invoice Date
+- Invoice Total
+- Line Items (as a list of objects with description, quantity, rate, total)
+
+Return the result strictly as JSON.
+
+Invoice text:
