@@ -3,3 +3,7 @@ paths:
   output: "./output_text"
   system_prompt: "./prompts/system_prompt.txt"
   user_prompt: "./prompts/user_prompt.txt"
+  excel_output: "./data_extraction/extracted_data.xlsx"
+sheets:
+  invoices_sheet: "invoices"
+  line_items_sheet: "line_items"

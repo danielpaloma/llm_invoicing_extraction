@@ -8,5 +8,34 @@ Extract the following fields from the invoice text below:
 - Line Items (as a list of objects with description, quantity, rate, total)
 
 Return the result strictly as JSON.
+Here is an example of the expected JSON response, keep the attribute names.
+
+{'invoice_number': '0D4DE8C6-A407-11EE-9488-B7DE766154DB',
+ 'vendor': 'GOODYEAR INTERNATIONAL CORPORATION',
+ 'recipient': 'GOODYEAR SERVICIOS COMERCIALES S DE RL DE CV',
+ 'invoice_date': '2023-12-26T10:09:37',
+ 'invoice_total': 27946.16,
+ 'line_items': [
+    {'description': 'HONORARIOS DE SERVICIO',
+     'quantity': 1,
+     'rate': 1829.07,
+     'total': 1829.07},
+    {'description': 'ALMACENAJE DE SERVICIO',
+     'quantity': 1,
+     'rate': 6602.79,
+     'total': 6602.79},
+    {'description': 'MANIOBRAS DE SERVICIO',
+     'quantity': 1,
+     'rate': 11750.0,
+     'total': 11750.0},
+    {'description': 'CONTRAPRESTACION DE SERVICIO',
+     'quantity': 1,
+     'rate': 20.0,
+     'total': 20.0},
+    {'description': 'SERVICIO DE ADMINISTRACION Y CONTROL',
+     'quantity': 1,
+     'rate': 3889.66,
+     'total': 3889.66}
+     ]}
 
 Invoice text:
