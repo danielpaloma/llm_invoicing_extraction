@@ -41,7 +41,7 @@ def main():
 
     # PROCESSING - CONVERT PDF TO TEXT:
     print("Processing PDFs to extract text...")
-    #extract_texts_from_folder(INPUT_PATH, OUTPUT_PATH)
+    extract_texts_from_folder(INPUT_PATH, OUTPUT_PATH)
 
     # DATA EXTRACTION:
     
@@ -59,8 +59,9 @@ def main():
                 
                 # Data validation: only save if response is not None and not empty
                 if response:
+                    print("Saving extracted data to Excel...")
                     save_json_to_excel(response, filename, EXCEL_PATH, INVOICES_SHEET, LINE_ITEMS_SHEET)
-                    print(f"Response for {filename}: {response}")
+                    #print(f"Response for {filename}: {response}")
                 else:
                     print(f"No valid response for {filename}, skipping save.")
 
